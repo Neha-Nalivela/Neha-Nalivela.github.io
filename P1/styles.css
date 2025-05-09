@@ -2,7 +2,7 @@
     margin: 0;
 }
 .container{
-    width: 1000px;
+    width: 100%;
     margin: auto;/*center*/
 }
 header{
@@ -13,7 +13,7 @@ header{
     padding: 20px;
 }
 li{
-    display:inline;
+    display:inline-block;
     font-size: 20px;
     padding: 30px;
 }
