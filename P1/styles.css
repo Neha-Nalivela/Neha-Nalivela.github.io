@@ -9,7 +9,7 @@ body{
 }
 .container{
     width: 100%;
-    /*margin: auto;center*/
+    margin: auto;/*center*/
 }
 header{
     display: flex;
@@ -39,7 +39,7 @@ button:hover{
     background-color: darkblue;
     cursor:pointer;
 }
-li{
+header li{
     color: rgb(106, 18, 77);
     display:inline-block;
     font-size: 20px;
@@ -63,6 +63,15 @@ header a{
 .box{
     width: 400px;
     padding: 30px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin: 10px;
+    transition: background-color .1s, transform 0.5s;
+}
+.box:hover{
+    border: 1px solid blue;
+    background-color: aqua;
+    transform: scale(1.1,1.1);
 }
 .btn-signup{
     background-color: yellow;
@@ -81,6 +90,15 @@ header a{
 }
 .title{
     font-size:30px;
-    padding-left:10px;
-    padding-right:20px;
+}
+.section-title{
+    text-align: center;
+    font-size: 50px;
+}
+footer{
+    padding: 20px;
+    text-align:center;
+    background-color: aquamarine;
+    color:beige;
+    font-size: x-large;
 }
