@@ -12,6 +12,8 @@ body{
     margin: auto;/*center*/
 }
 header{
+    position: sticky;
+    top:0%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -131,12 +133,12 @@ header a{
     padding: 30px;
     background-color:blanchedalmond;
     border-radius: 20px;
-    margin: 10px;
+    margin: 0 auto;
 }
 .btn-signup{
     background-color: rgb(163, 163, 141);
     margin-top: 10px;
-    padding:30px;
+    padding:10px;
     font-size:20px;
     border-radius: 10px;
     border:none;
@@ -163,4 +165,38 @@ footer{
     background-color: rgb(30, 86, 118);
     color:rgb(181, 143, 103);
     font-size: x-large;
+}
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.service-box {
+  position: relative;  
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  border-color: #333;
+}
+
+.skills-list {
+  list-style-position: inside;
+  padding-left: 0;
+}
+.service-title{
+    position: absolute;
+    top: -0.8em;
+    z-index: 1;
 }
