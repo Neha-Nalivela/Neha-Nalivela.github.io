@@ -35,8 +35,11 @@ header ul li a:hover{
     text-decoration: aliceblue;
     color:aquamarine;
 }
+.button{
+    background-color: darkgrey;
+}
 button:hover{
-    background-color: darkblue;
+    background-color: rgb(174, 174, 196);
     cursor:pointer;
 }
 header li{
@@ -131,7 +134,7 @@ header a{
     margin: 10px;
 }
 .btn-signup{
-    background-color: yellow;
+    background-color: rgb(163, 163, 141);
     margin-top: 10px;
     padding:30px;
     font-size:20px;
