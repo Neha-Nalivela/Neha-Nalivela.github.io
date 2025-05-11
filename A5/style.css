@@ -23,14 +23,14 @@
     .box{
         font-size:38%;
         width:25%;
-        background-color: bisque;
+        background-color: rgb(119, 71, 87);
     }       
 }
 
 @media only screen and (max-width:150px){
     .box{
-        font-size:38%;
+        font-size:15%;
         width:25%;
-        background-color: bisque;
+        background-color: rgb(41, 168, 71);
     }       
 }
