@@ -12,7 +12,11 @@
             <div class="box">
                 <h1  style="color:rgb(15, 39, 122)">Login Page</h1>
                 <form>
-                    <p><input type="text" placeholder="First-name"></p>
+                    <p>
+                        <input type="text" placeholder="First-name"></p>
+                    <p>
+                        <input type="text" placeholder="Lastname">
+                    </p>
                     <p>
                     <select>
                         <option>1</option>
@@ -28,14 +32,16 @@
                     </select>
                 </p>
                 <p>Gender
-                    <label><input type="radio">Male</label>
-                    <label><input type="radio">Female</label>
-                    <label><input type="radio">Custom</label>
+                    <label><input type="radio" name="gender">Male</label>
+                    <label><input type="radio" name="gender">Female</label>
+                    <label><input type="radio" name="gender">Custom</label>
                 </p>
                 <p><input type="email" placeholder="Enter Email"></p>
                 <p><input type="password" placeholder="Enter password"></p>
-                <button type="submit">Submit</button>
-                </form>
+                <div class="button-wrapper">
+                    <button type="submit" align-items:"center">Submit</button>
+                </div>
+            </form>
             </div>
         </div>
     </section>
