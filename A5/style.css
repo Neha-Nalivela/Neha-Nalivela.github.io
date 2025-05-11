@@ -26,3 +26,11 @@
         background-color: bisque;
     }       
 }
+
+@media only screen and (max-width:150px){
+    .box{
+        font-size:38%;
+        width:25%;
+        background-color: bisque;
+    }       
+}
