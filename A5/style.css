@@ -7,6 +7,7 @@
     .box{
         font-size:100%;
         width:100%;
+        background-color: pink;
     }       
 }
 
@@ -14,6 +15,7 @@
     .box{
         font-size:68%;
         width:50%;
+        background-color: blueviolet;
     }       
 }
 
@@ -21,5 +23,6 @@
     .box{
         font-size:38%;
         width:25%;
+        background-color: bisque;
     }       
 }
