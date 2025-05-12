@@ -1,0 +1,71 @@
+/*h1, h3, p{
+    background-color: blue;
+    color: aliceblue;
+}*/
+p{
+    background-color: aquamarine;
+}
+/*psudo color*/
+p:hover{
+    background-color: aqua;
+}
+input:focus{
+    background-color: antiquewhite;
+}
+div::first-line{
+    background-color: aquamarine;
+    color: blue;
+}
+div::first-letter{
+    font-size:40px;
+}
+::marker{
+    color: brown;
+    font-size:20px;
+}
+input{
+    padding:20px;
+}
+a:link{
+    color:aliceblue;
+}
+a:visited{
+    color: antiquewhite;
+}
+a:active{
+    color: azure;
+}
+.box-style{
+    transition: transform .5s;
+    margin:20px;
+    padding:20px;
+    border:1px solid grey;
+    background-image: linear-gradient(to right,maroon,white);
+}
+.box-style:hover{
+    transform:scale(1.1,1.1);
+}
+.box-animation{
+    margin:20px;
+    padding:20px;
+    border:1px solid rgb(32, 41, 106);
+    background-image: orange;
+    animation: topics;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count:2;
+}
+@keyframes topics {
+    from{left:0px}
+    to{left:400px}
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.container div{
+    background-color: beige;
+    width:300px;
+}
