@@ -293,6 +293,23 @@ input{
   height:80px;
   margin-right: 10px;
 }
+.product-img{
+  display:flex;
+  align-items: center;
+  padding:0px;
+  width:250px;
+  margin:10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.product-img img{
+  width:80px;
+  height:80px;
+  margin-right: 10px;
+}
+.product-img info{
+  display: flex;
+  flex-direction: column;
+}
 .product-info {
   display: flex;
   flex-direction: column;
@@ -334,6 +351,21 @@ caption {
   margin-top: 10px;
   font-weight: 500;
 }
-
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.box-animation{
+    margin:20px;
+    padding:20px;
+    border:1px solid rgb(32, 41, 106);
+    background-image: orange;
+    animation: topics;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count:2;
+}
 @media only screen and (max-width:600px){
 }
