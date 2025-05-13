@@ -1,15 +1,20 @@
-let str1="";
-let str2="";
-let str3="";
-for(let i=1;i<=31;i+10){
-     str1=str1+`<option>${i}</option>`;
+// Populate dates 1–31
+let str1 = "";
+for (let i = 1; i <= 31; i++) {
+  str1 += `<option value="${i}">${i}</option>`;
 }
-date.innerHTML = str;
-for(let i=1;i<=12;i+10){
-     str2=str2+`<option>${i}</option>`;
+document.getElementById("date").innerHTML = str1;
+
+// Populate months 1–12
+let str2 = "";
+for (let i = 1; i <= 12; i++) {
+  str2 += `<option value="${i}">${i}</option>`;
 }
-mon.innerHTML = str2;
-for(let i=1;i<=31;i+10){
-     str3=str3+`<option>${i}</option>`;
+document.getElementById("mon").innerHTML = str2;
+
+// Populate years 1980–2025
+let str3 = "";
+for (let i = 1980; i <= 2025; i++) {
+  str3 += `<option value="${i}">${i}</option>`;
 }
-year.innerHTML = str3;
+document.getElementById("year").innerHTML = str3;

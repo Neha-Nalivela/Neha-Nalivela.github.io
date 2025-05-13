@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Tags</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Tags</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script> <!-- DEFER ensures it runs after HTML loads -->
 </head>
 <body>
-    <section>
-        <div class="container">
-            <div class="box">
-                <h1  style="color:rgb(15, 39, 122)">Login Page</h1>
-                <form>
-                    <p>
-                        <input type="text" placeholder="First-name"></p>
-                    <p>
-                        <input type="text" placeholder="Lastname">
-                    </p>
-                    <p>
-                    <select is="date">
-                    </select>
-                    <select id="mon">
-                    </select>
-                    <select id="year">
-                    </select>
-                </p>
-                <p>Gender</p>
-                <p>
-                    <label><input type="radio" name="gender">Male</label>
-                    <label><input type="radio" name="gender">Female</label>
-                    <label><input type="radio" name="gender">Custom</label>
-                </p>
-                <p><input type="email" placeholder="Enter Email"></p>
-                <p><input type="password" placeholder="Enter password"></p>
-                <div class="button-wrapper">
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
-                </div>
-            </form>
-            </div>
-        </div>
-    </section>
+  <section>
+    <div class="container">
+      <div class="box">
+        <h1 style="color:rgb(15, 39, 122)">Login Page</h1>
+        <form>
+          <p><input type="text" placeholder="First-name" /></p>
+          <p><input type="text" placeholder="Last-name" /></p>
+          <p>
+            <select id="date"></select>
+            <select id="mon"></select>
+            <select id="year"></select>
+          </p>
+          <p>Gender</p>
+          <p>
+            <label><input type="radio" name="gender" />Male</label>
+            <label><input type="radio" name="gender" />Female</label>
+            <label><input type="radio" name="gender" />Custom</label>
+          </p>
+          <p><input type="email" placeholder="Enter Email" /></p>
+          <p><input type="password" placeholder="Enter password" /></p>
+          <div class="button-wrapper">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
