@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="stles.css">
 </head>
 <body>
-    <input type="num" placeholder="Enter number1" id="num1">
-    <input type="num" placeholder="Enter number2" id="num2">
+    <input type="num" placeholder="Enter number1" id="num1"><br><br>
+    <!--<input type="num" placeholder="Enter number2" id="num2">-->
+    <select id="num2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select><br></br>
     <button onclick="msg()">Submit</button>
-    <div id="res"></div>
     <hr>
+    <div id="resultDiv">
+        <p id="dvAdd"></p>
+        <p id="dvSub"></p>
+        <p id="dvMul"></p>
+        <p id="dvDiv"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
