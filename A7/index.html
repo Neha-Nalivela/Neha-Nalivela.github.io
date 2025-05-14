@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="stles.css">
-</head>
-<body>
-    <input type="num" placeholder="Enter number1" id="num1"><br><br>
-    <!--<input type="num" placeholder="Enter number2" id="num2">-->
-    <select id="num2">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-    </select><br></br>
-    <button onclick="msg()">Submit</button>
-    <hr>
-    <div id="resultDiv">
-        <p id="dvAdd"></p>
-        <p id="dvSub"></p>
-        <p id="dvMul"></p>
-        <p id="dvDiv"></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h2>Simple Calculator</h2>
+        <select id="num1"></select>
+        <select id="num2"></select>
+        <button onclick="msg()">Calculate</button>
+      </div>
     </div>
+
+    <div class="results">
+      <div class="box2">
+          <div id="dvAdd"></div>
+          <div id="dvSub"></div>
+          <div id="dvMul"></div>
+          <div id="dvDiv"></div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
