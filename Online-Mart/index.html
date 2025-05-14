@@ -18,16 +18,18 @@
               <option>All Categories</option>
             </select>
             <input
-              type="text"
+              type="text" id="searchid"
               placeholder="Search for more than 20,000 products"
             />
             <img
               src="images/search.jpeg"
               alt="search"
+              onclick="search(list)"
               width="30px"
               height="30px"
             />
           </div>
+          <div id="res" style="margin: 10px; font-weight: bold;"></div>
           <div class="support">
             <p>For support?</p>
             <strong><p class="phone">+5647537495</p></strong>
@@ -116,28 +118,70 @@
         <h3>Category</h3>
         <div class="row">
           <figure>
-            <div class="box1"><img src="images/icon-animal-products-drumsticks.png" alt="icon-animal-products-drumsticks"></div>
-            <caption>Fruits & Veges</caption>
+            <div class="box1">
+              <img
+                src="images/icon-animal-products-drumsticks.png"
+                alt="icon-animal-products-drumsticks"
+              />
+            </div>
+            <caption>
+              Fruits & Veges
+            </caption>
           </figure>
           <figure>
-            <div class="box1"><img src="images/icon-bread-baguette.png" alt="icon-bread-baguette"></div>
-            <caption>Breads &Sweets</caption>
+            <div class="box1">
+              <img
+                src="images/icon-bread-baguette.png"
+                alt="icon-bread-baguette"
+              />
+            </div>
+            <caption>
+              Breads &Sweets
+            </caption>
           </figure>
           <figure>
-            <div class="box1"><img src="images/icon-bread-herb-flour.png" alt="icon-bread-herb-flour"></div>
-            <caption>Breads &Sweets</caption>
+            <div class="box1">
+              <img
+                src="images/icon-bread-herb-flour.png"
+                alt="icon-bread-herb-flour"
+              />
+            </div>
+            <caption>
+              Breads &Sweets
+            </caption>
           </figure>
           <figure>
-            <div class="box1"><img src="images/icon-soft-drinks-bottle.png" alt="icon-soft-drinks-bottle"></div>
-            <caption>Breads &Sweets</caption>
+            <div class="box1">
+              <img
+                src="images/icon-soft-drinks-bottle.png"
+                alt="icon-soft-drinks-bottle"
+              />
+            </div>
+            <caption>
+              Breads &Sweets
+            </caption>
           </figure>
           <figure>
-            <div class="box1"><img src="images/icon-vegetables-broccoli.png" alt="icon-vegetables-broccoli"></div>
-            <caption>Breads &Sweets</caption>
+            <div class="box1">
+              <img
+                src="images/icon-vegetables-broccoli.png"
+                alt="icon-vegetables-broccoli"
+              />
+            </div>
+            <caption>
+              Breads &Sweets
+            </caption>
           </figure>
           <figure>
-            <div class="box1"><img src="images/icon-wine-glass-bottle.png" alt="icon-wine-glass-bottle"></div>
-            <caption>Breads &Sweets</caption>
+            <div class="box1">
+              <img
+                src="images/icon-wine-glass-bottle.png"
+                alt="icon-wine-glass-bottle"
+              />
+            </div>
+            <caption>
+              Breads &Sweets
+            </caption>
           </figure>
         </div>
       </section>
@@ -146,10 +190,12 @@
         <div class="row">
           <div class="box2">
             <figure>
-              <div class="product-card"> 
-                <img src="images/product-thumb-11.jpg" alt="product-thumb-11">
+              <div class="product-card">
+                <img src="images/product-thumb-11.jpg" alt="product-thumb-11" />
                 <div class="product-info">
-                  <caption>Amber Jar</caption>
+                  <caption>
+                    Amber Jar
+                  </caption>
                   <p>Honey best nectar you wish to get</p>
                 </div>
               </div>
@@ -158,9 +204,11 @@
           <div class="box2">
             <figure>
               <div class="product-card">
-                <img src="images/product-thumb-12.jpg" alt="product-thumb-12">
+                <img src="images/product-thumb-12.jpg" alt="product-thumb-12" />
                 <div class="product-info">
-                  <caption>Amber Jar</caption>
+                  <caption>
+                    Amber Jar
+                  </caption>
                   <p>Honey best nectar you wish to get</p>
                 </div>
               </div>
@@ -169,9 +217,11 @@
           <div class="box2">
             <figure>
               <div class="product-card">
-                <img src="images/product-thumb-13.jpg" alt="product-thumb-13">
+                <img src="images/product-thumb-13.jpg" alt="product-thumb-13" />
                 <div class="product-info">
-                  <caption>Amber Jar</caption>
+                  <caption>
+                    Amber Jar
+                  </caption>
                   <p>Honey best nectar you wish to get</p>
                 </div>
               </div>
@@ -180,9 +230,11 @@
           <div class="box2">
             <figure>
               <div class="product-card">
-                <img src="images/product-thumb-14.jpg" alt="product-thumb-12">
+                <img src="images/product-thumb-14.jpg" alt="product-thumb-12" />
                 <div class="product-info">
-                  <caption>Amber Jar</caption>
+                  <caption>
+                    Amber Jar
+                  </caption>
                   <p>Honey best nectar you wish to get</p>
                 </div>
               </div>
@@ -197,49 +249,11 @@
           <div class="container">
             <figure>
               <div class="product-cart">
-                <img src="images/thumb-bananas.png" alt="banana">
+                <img src="images/thumb-bananas.png" alt="banana" />
                 <div class="product-img-info">
-                  <caption>Sunstar Fresh Melon Juice</caption>
-                <p>$18.2</p>
-                <button>Add to Cart</button>
-                </div>
-              </div>
-            </figure>
-            <figure>
-              <div class="product-cart">
-                <img src="images/thumb-avocado.png" alt="avagado">
-                <div class="product-img-info">
-                  <caption>Sunstar Fresh Melon Juice</caption>
-                <p>$18.2</p>
-                <button>Add to Cart</button>
-                </div>
-              </div>
-            </figure>
-            <figure>
-              <div class="product-cart">
-                <img src="images/thumb-biscuits.png" alt="biscuits">
-                <div class="product-img-info">
-                <caption>Sunstar Fresh Melon Juice</caption>
-                <p>$18.2</p>
-                <button>Add to Cart</button>
-                </div>
-              </div>
-            </figure>
-            <figure>
-              <div class="product-cart">
-                <img src="images/thumb-cucumber.png" alt="cucumber">
-                <div class="product-img-info">
-                  <p>$18.2</p>
-                  <button>Add to Cart</button>
-                  <caption>Sunstar Fresh Melon Juice</caption>
-                </div>
-              </div>
-            </figure>
-            <figure>
-              <div class="product-cart">
-                <img src="images/thumb-herb.jpg" alt="herb">
-                <div class="product-img-info">
-                  <caption>Sunstar Fresh Melon Juice</caption>
+                  <caption>
+                    Sunstar Fresh Melon Juice
+                  </caption>
                   <p>$18.2</p>
                   <button>Add to Cart</button>
                 </div>
@@ -247,9 +261,11 @@
             </figure>
             <figure>
               <div class="product-cart">
-                <img src="images/thumb-honey.jpg" alt="honey">
+                <img src="images/thumb-avocado.png" alt="avagado" />
                 <div class="product-img-info">
-                  <caption>Sunstar Fresh Melon Juice</caption>
+                  <caption>
+                    Sunstar Fresh Melon Juice
+                  </caption>
                   <p>$18.2</p>
                   <button>Add to Cart</button>
                 </div>
@@ -257,9 +273,11 @@
             </figure>
             <figure>
               <div class="product-cart">
-                <img src="images/thumb-junk.jpg" alt="junk">
+                <img src="images/thumb-biscuits.png" alt="biscuits" />
                 <div class="product-img-info">
-                  <caption>Sunstar Fresh Melon Juice</caption>
+                  <caption>
+                    Sunstar Fresh Melon Juice
+                  </caption>
                   <p>$18.2</p>
                   <button>Add to Cart</button>
                 </div>
@@ -267,9 +285,23 @@
             </figure>
             <figure>
               <div class="product-cart">
-                <img src="images/thumb-milk.png" alt="milk">
+                <img src="images/thumb-cucumber.png" alt="cucumber" />
                 <div class="product-img-info">
-                  <caption>Sunstar Fresh Melon Juice</caption>
+                  <p>$18.2</p>
+                  <button>Add to Cart</button>
+                  <caption>
+                    Sunstar Fresh Melon Juice
+                  </caption>
+                </div>
+              </div>
+            </figure>
+            <figure>
+              <div class="product-cart">
+                <img src="images/thumb-herb.jpg" alt="herb" />
+                <div class="product-img-info">
+                  <caption>
+                    Sunstar Fresh Melon Juice
+                  </caption>
                   <p>$18.2</p>
                   <button>Add to Cart</button>
                 </div>
@@ -277,9 +309,11 @@
             </figure>
             <figure>
               <div class="product-cart">
-                <img src="images/thumb-orange-juice.png" alt="orange-juice">
+                <img src="images/thumb-honey.jpg" alt="honey" />
                 <div class="product-img-info">
-                  <caption>Sunstar Fresh Melon Juice</caption>
+                  <caption>
+                    Sunstar Fresh Melon Juice
+                  </caption>
                   <p>$18.2</p>
                   <button>Add to Cart</button>
                 </div>
@@ -287,9 +321,11 @@
             </figure>
             <figure>
               <div class="product-cart">
-                <img src="images/thumb-raspberries.png" alt="raspberries">
+                <img src="images/thumb-junk.jpg" alt="junk" />
                 <div class="product-img-info">
-                  <caption>Sunstar Fresh Melon Juice</caption>
+                  <caption>
+                    Sunstar Fresh Melon Juice
+                  </caption>
                   <p>$18.2</p>
                   <button>Add to Cart</button>
                 </div>
@@ -297,9 +333,11 @@
             </figure>
             <figure>
               <div class="product-cart">
-                <img src="images/thumb-tomatoes.png" alt="tomato">
+                <img src="images/thumb-milk.png" alt="milk" />
                 <div class="product-img-info">
-                  <caption>Sunstar Fresh Melon Juice</caption>
+                  <caption>
+                    Sunstar Fresh Melon Juice
+                  </caption>
                   <p>$18.2</p>
                   <button>Add to Cart</button>
                 </div>
@@ -307,9 +345,11 @@
             </figure>
             <figure>
               <div class="product-cart">
-                <img src="images/thumb-tomatoketchup.png" alt="tomato-ketchup">
+                <img src="images/thumb-orange-juice.png" alt="orange-juice" />
                 <div class="product-img-info">
-                  <caption>Sunstar Fresh Melon Juice</caption>
+                  <caption>
+                    Sunstar Fresh Melon Juice
+                  </caption>
                   <p>$18.2</p>
                   <button>Add to Cart</button>
                 </div>
@@ -317,9 +357,50 @@
             </figure>
             <figure>
               <div class="product-cart">
-                <img src="images/thumb-tuna.jpg" alt="tuna">
+                <img src="images/thumb-raspberries.png" alt="raspberries" />
                 <div class="product-img-info">
-                  <caption>Sunstar Fresh Melon Juice</caption>
+                  <caption>
+                    Sunstar Fresh Melon Juice
+                  </caption>
+                  <p>$18.2</p>
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+            </figure>
+            <figure>
+              <div class="product-cart">
+                <img src="images/thumb-tomatoes.png" alt="tomato" />
+                <div class="product-img-info">
+                  <caption>
+                    Sunstar Fresh Melon Juice
+                  </caption>
+                  <p>$18.2</p>
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+            </figure>
+            <figure>
+              <div class="product-cart">
+                <img
+                  src="images/thumb-tomatoketchup.png"
+                  alt="tomato-ketchup"
+                />
+                <div class="product-img-info">
+                  <caption>
+                    Sunstar Fresh Melon Juice
+                  </caption>
+                  <p>$18.2</p>
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+            </figure>
+            <figure>
+              <div class="product-cart">
+                <img src="images/thumb-tuna.jpg" alt="tuna" />
+                <div class="product-img-info">
+                  <caption>
+                    Sunstar Fresh Melon Juice
+                  </caption>
                   <p>$18.2</p>
                   <button>Add to Cart</button>
                 </div>
@@ -329,5 +410,6 @@
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
