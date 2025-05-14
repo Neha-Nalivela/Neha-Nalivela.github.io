@@ -1,40 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Form Tags</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script> <!-- DEFER ensures it runs after HTML loads -->
-</head>
-<body>
-  <section>
-    <div class="container">
-      <div class="box">
-        <h1 style="color:rgb(15, 39, 122)">Login Page</h1>
-        <form>
-          <p><input type="text" placeholder="First-name" /></p>
-          <p><input type="text" placeholder="Last-name" /></p>
-          <p>
-            <select id="date"></select>
-            <select id="mon"></select>
-            <select id="year"></select>
-          </p>
-          <p>Gender</p>
-          <p>
-            <label><input type="radio" name="gender" />Male</label>
-            <label><input type="radio" name="gender" />Female</label>
-            <label><input type="radio" name="gender" />Custom</label>
-          </p>
-          <p><input type="email" placeholder="Enter Email" /></p>
-          <p><input type="password" placeholder="Enter password" /></p>
-          <div class="button-wrapper">
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-          </div>
-        </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Tags</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <!-- DEFER ensures it runs after HTML loads -->
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="box">
+          <h1 style="color: rgb(15, 39, 122)">Amazon Login Page</h1>
+          <form>
+            <p>
+              <input type="text" placeholder="First-name" style="width: 100%" />
+            </p>
+            <p>
+              <input type="text" placeholder="Last-name" style="width: 100%" />
+            </p>
+            <p style="text-align: left">Date of birth:</p>
+            <p>
+              <select id="date"></select>
+              <select id="mon"></select>
+              <select id="year"></select>
+            </p>
+            <p>Gender</p>
+            <p>
+              <label
+                ><input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male"
+                />Male</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="gender"
+                  value="female"
+                  id="female"
+                />Female</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="gender"
+                  value="custom"
+                  id="custom"
+                />Custom</label
+              >
+            </p>
+
+            <div id="pronounDiv" style="display: none">
+              <select style="width: 100%">
+                <option selected disabled>Select your pronoun</option>
+                <option>She/Her</option>
+                <option>He/Him</option>
+                <option>They/Them</option>
+                <option>Other</option>
+              </select>
+              <div class="button-wrapper">
+                <button
+                  type="button"
+                  style="background-color: cadetblue; width: 100%"
+                >
+                  OK
+                </button>
+              </div>
+            </div>
+
+            <p>
+              <input
+                type="email"
+                placeholder="Enter Email"
+                style="width: 100%"
+              />
+            </p>
+            <p>
+              <input
+                type="password"
+                placeholder="Enter password"
+                style="width: 100%"
+              />
+            </p>
+            <p>
+              <input
+                type="password"
+                placeholder="Confirm password"
+                style="width: 100%"
+              />
+            </p>
+            <div class="button-wrapper">
+              <button
+                type="submit"
+                style="background-color: cadetblue; width: 50%"
+              >
+                Submit
+              </button>
+              <button
+                type="reset"
+                style="background-color: cadetblue; width: 50%"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+          <a href="#">Already have an account?</a>
+        </div>
       </div>
-    </div>
-  </section>
-</body>
+    </section>
+  </body>
 </html>
