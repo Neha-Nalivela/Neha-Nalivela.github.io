@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .row{
+            display:'flex';
+            justify-content:'center';
+        }
+        .row div{
+            background-color: aquamarine;
+            margin:20px;
+            padding:10px;
+        }
+
+    </style>
+    <script>
+      const products = [
+        { id: 1, name: "Apple", price: 250, imgURl: "https://www.bing.com/search?q=Apple%20image&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=apple%20imag&sc=12-10&sk=&cvid=14489562F88B4B8580BC9AE454E29972&ntref=1" },
+        { id: 2, name: "Orange", price: 100, imgUrl: "https://www.bing.com/images/search?view=detailV2&ccid=fU1OBf6z&id=029EEB08D42E7204C64B02E345F375B9B310F140&thid=OIP.fU1OBf6zpJvfSZ0HMOqudQHaHy&mediaurl=https%3a%2f%2fwww.pngarts.com%2ffiles%2f3%2fSingle-Orange-PNG-Image.png&exph=3867&expw=3678&q=orange+image&simid=608025455928766250&FORM=IRPRST&ck=EF3E0EE4FDC3968F1C5BD463E3983584&selectedIndex=0&itb=1&idpp=overlayview&ajaxhist=0&ajaxserp=0" },
+        { id: 3, name: "Mango", price: 80, imgUrl: "https://www.bing.com/images/search?view=detailV2&ccid=ACqKyXDe&id=0C020A2182D7B62CB107457F17FF5BB25DFCACC2&thid=OIP.ACqKyXDeb68UHqy9V9_-0gHaE7&mediaurl=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2756462.jpg&exph=1279&expw=1920&q=mango+image&simid=608029888322297974&FORM=IRPRST&ck=6F7F4E9C3A386AA6DD661BB61EF4ECFC&selectedIndex=21&itb=0&cw=621&ch=599&ajaxhist=0&ajaxserp=0" },
+      ];
+    </script>
+  </head>
+  <body>
+    <h1>Handling Array of Objects</h1>
+    <div id="container" class="row"></div>
+    <script>
+        let str=""
+        products.map(value=>{
+            str+=`<div>
+                <img src=${value.imgUrl}/>
+                <h1>${value.name}</h1>
+                <h2>${value.price}</h2>
+                <button>Add to Cart</button>
+            </div>`
+        });
+        container.innerHTML = str;
+    </script>
+  </body>
+</html>
