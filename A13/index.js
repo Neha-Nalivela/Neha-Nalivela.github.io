@@ -1,9 +1,11 @@
- fetch("https://jsonplaceholder.typicode.com/posts")//fetch(url)
- .then((res) => res.json()//to get in json format
- .then((data) => console.log(data)));//display
+const products=[
+    { id: 1, name: "product1", price: 34},
+    { id : 2, name: "product2", price: 56},
+    { id : 3, name: "product2", price: 43}
+
+];
+//products.foreach((product) => console.log(product.name))
 
 
-
-// // Get info grom remote server
-// // Convert data into json format
-// // Display the converting data
+const ins = products.map(price=>[price.price+5])
+console.log(ins)
