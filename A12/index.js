@@ -5,3 +5,7 @@ const products=[
 
 ];
 products.foreach((product) => console.log(product.name))
+
+
+const ins = products.map(price=>[price.price+5])
+console.log(ins)
