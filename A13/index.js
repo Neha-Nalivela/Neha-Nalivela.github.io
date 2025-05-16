@@ -5,5 +5,5 @@ const products=[
 
 ];
 
-const ins = products.map(value=>value+5)
+const ins = products.map(price=>[price.price+5])
 console.log(ins)
