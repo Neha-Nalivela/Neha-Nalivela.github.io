@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Product Manager</title>
     <style>
       .row {
         display: flex;
@@ -16,67 +16,94 @@
         margin: 10px;
         padding: 10px;
         width: 200px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+
+      img {
+        width: 180px;
+        height: 120px;
+        border-radius: 4px;
+      }
+
+      input {
+        margin: 5px;
       }
     </style>
   </head>
   <body onload="dispProducts()">
     <h1>Handling Array of Objects</h1>
     <p>
-      <input type="number" id="txtId" />
-      <input type="text" id="txtName" />
-      <input type="number" id="txtPrice" />
-      <input type="text" id="txtUrl" />
+      <input type="number" id="txtId" placeholder="ID" />
+      <input type="text" id="txtName" placeholder="Name" />
+      <input type="number" id="txtPrice" placeholder="Price" />
+      <input type="text" id="txtUrl" placeholder="Image URL" />
       <button onclick="addProduct()">Add</button>
+      <button onclick="delProduct()">Delete</button>
     </p>
     <div id="container" class="row"></div>
+
     <script>
-      const products = [
+      let products = [
         {
           id: 1,
           name: "Apple",
           price: "$250",
-          imgUrl: "https://picsum.photos/id/11/200/200",
+          imgUrl: "images/Apple.jpeg",
         },
         {
           id: 2,
           name: "Orange",
           price: "$100",
-          imgUrl: "https://picsum.photos/id/12/200/200",
+          imgUrl: "images/Orange.jpeg",
         },
         {
           id: 3,
           name: "Mango",
           price: "$80",
-          imgUrl: "https://picsum.photos/id/13/200/200",
+          imgUrl: "images/Mango.jpeg",
         },
       ];
 
       function addProduct() {
-        let id = document.querySelector("#txtId").value;
+        let id = Number(document.querySelector("#txtId").value);
         let name = document.querySelector("#txtName").value;
         let price = document.querySelector("#txtPrice").value;
         let imgUrl = document.querySelector("#txtUrl").value;
+
+        if (!id || !name || !price || !imgUrl) {
+          alert("Please fill all fields");
+          return;
+        }
+
         const obj = {
-          id: id,
-          name: name,
-          price: price,
-          imgUrl: imgUrl,
+          id,
+          name,
+          price: `$${price}`,
+          imgUrl,
         };
-        products.push(obj)
-        dispProducts()
+        products.push(obj);
+        dispProducts();
+      }
+
+      function delProduct() {
+        const id = Number(document.querySelector("#txtId").value);
+        products = products.filter((value) => value.id !== id);
+        dispProducts();
       }
 
       function dispProducts() {
         let str = "";
-        products.map((value) => {
+        products.forEach((value) => {
           str += `<div>
-                <img src=${value.imgUrl}/>
-                <h2>${value.name}</h2>
-                <h3>${value.price}</h3>
-                <button>Add to Cart</button>
-                </div>`;
+                    <img src="${value.imgUrl}" alt="${value.name}" />
+                    <h2>${value.name}</h2>
+                    <h3>${value.price}</h3>
+                    <button>Add to Cart</button>
+                  </div>`;
         });
-        container.innerHTML = str;
+        document.querySelector("#container").innerHTML = str;
       }
     </script>
   </body>
