@@ -8,7 +8,6 @@ const products=[
 const cart={1:7,3:5}//id:qty
 products.map(value=>{
     const qty = cart[value.id]||0;
-    //const total:qty*value.price
     console.log(value.id, value.name, value.price, value.price*qty)
 })
 
