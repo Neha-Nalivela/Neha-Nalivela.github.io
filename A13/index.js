@@ -4,8 +4,7 @@ const products=[
     { id : 3, name: "product3", qty:2, price: 43, status:"pending"},
 
 ];
-const ins = products.filter(product=>product.qty>2)
-.map((product)=>({
+const ins = products.filter(product=>product.qty>2).map((product)=>({
     ...product,
     price:product.price+5, 
     status: "completed", 
