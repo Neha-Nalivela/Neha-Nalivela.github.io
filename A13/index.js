@@ -6,10 +6,16 @@ const products=[
 ];
 
 const cart={1:7,3:5}//id:qty
-products.map(value=>{
-    const qty = cart[value.id]||0;
-    console.log(value.id, value.name, value.price, value.price*qty)
-})
+products.map(product => {
+    cart[product.id] &&(
+        console.log(product.id, product.name, product.price*cart[product.id])
+    )
+});
+
+//products.map(value=>{
+//    const qty = cart[value.id]||0;
+//    console.log(value.id, value.name, value.price, value.price*qty)
+//})
 
 //const ins = products.filter(product=>product.qty>2).map((product)=>({
 //    ...product,
