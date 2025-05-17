@@ -1,7 +1,8 @@
 function add(x, y) {
     if (x < 5) {
         return Promise.reject("X is less than 5");
-    } else {
+    } 
+    else {
         return Promise.resolve(x + y);
     }
 }
