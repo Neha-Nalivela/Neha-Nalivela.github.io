@@ -5,8 +5,5 @@ const products = [
 ];
 
 const cart = { 1: 7, 3: 5 };
-const total = products.reduce((sum,value)=>{
-    const qty= cart[value.id]||0;
-    return sum + value.price * qty;
-},0)
+const total = products.reduce((sum,value)=> sum + value.price * (cart[value.id]??0),0);
 console.log(total);
