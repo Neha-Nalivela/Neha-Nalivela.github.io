@@ -7,8 +7,6 @@ const products = [
 const showProducts = () => {
   const root = document.getElementById("root");
 
-  root.innerHTML = "<h2>Product List</h2>"; // Set initial heading
-
   products.map((value) => {
     root.innerHTML += `
       <div class="product">
