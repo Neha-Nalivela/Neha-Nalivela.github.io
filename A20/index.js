@@ -1,4 +1,5 @@
-const Value = () => {[
+const Value = () => {
+    return[
   {
     "id": 1,
     "name": "Leanne Graham",
@@ -232,12 +233,15 @@ const Value = () => {[
 ]};
 
 function Fetch() {
-      const inputEmail = document.getElementById("n1").value.trim();
-      const user = users.find(u => u.email.toLowerCase() === inputEmail.toLowerCase());
+    const users = Value(); // get the data
+    const inputEmail = document.getElementById("n1").value.trim();
+    const user = users.find(u => u.email.toLowerCase() === inputEmail.toLowerCase());
 
-      if (user) {
-        document.getElementById("message").textContent = `Welcome, ${user.name}`;
-      } else {
-        document.getElementById("message").textContent = "Email not found!";
-      }
+    if (user) {
+      document.getElementById("message").textContent = `Welcome, ${user.name}`;
+    } else {
+      document.getElementById("message").textContent = "Email not found!";
     }
+  }
+
+  
