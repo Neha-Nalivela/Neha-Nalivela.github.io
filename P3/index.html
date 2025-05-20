@@ -103,6 +103,7 @@
             <select id="transaction-type">
                 <option value="deposit">Deposit</option>
                 <option value="withdraw">Withdraw</option>
+                <option value="fund-transfer">Fund Transfer</option>
             </select>
         </div>
         <div class="form-group">
@@ -168,7 +169,23 @@
             return;
         }
     }
-        updateBalanceMessage();
+    else if(type === "fund-transfer"){
+        const receiverCard = prompt("Enter recipient's card number:");
+        const receiver = customers.find(c => c.cart === receiverCard && c !== currentCustomer);
+        if (!receiver) {
+            alert("Invalid recipient card number.");
+            return;
+        }
+        if (currentCustomer.balance >= amount) {
+            currentCustomer.balance -= amount;
+            receiver.balance += amount;
+            alert(`₹${amount} transferred to ${receiver.name}`);
+        } else {
+            
+            return;
+        }
+    }
+    updateBalanceMessage();
     }
 
     function updateBalanceMessage() {
