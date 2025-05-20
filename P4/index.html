@@ -13,7 +13,47 @@
   </head>
   <body>
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="row sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand">Neha</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home"
+                >Home <span class="sr-only" class="col-lg-8">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" class="col-lg-9">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services" class="col-lg-10"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" class="col-lg-11">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" class="col-lg-12">Contact</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Neha</a>
         <button
           class="navbar-toggler"
@@ -40,7 +80,7 @@
           </ul>
         </div>
       </nav>
-      <!-- <div class="col-lg-8 bg-danger">
+      <div class="col-lg-8 bg-danger">
           <h1>Your Name</h1>
         </div>
         <div class="col-lg-2">
@@ -51,10 +91,11 @@
         <div class="col-lg-6">
           <h1 class="text-primary">MERN Stack Developer</h1>
           <p class="text-primary">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
-            earum, fuga ipsum qui maiores rem, a eligendi minus quam cumque
-            ratione ipsam optio illo sunt deleniti! Mollitia, temporibus minus!
-            Molestiae.
+            I'm a Computer Science student undergraduate and MERN Stack
+            developer, passionate about building smart, user-focused web
+            applications. I specialize in the MERN stack and enjoy building
+            clean, responsive, and impactful applications. My focus is on
+            solving real-world problems with intuitive, user-centered design.
           </p>
           <button class="btn btn-lg btn-outline-danger">View More</button>
         </div>
@@ -63,33 +104,47 @@
         </div>
       </div>
 
-      <div class="row bg-secondary">
+      <div class="row bg-secondary" id="projects">
         <div class="col-lg-4">
           <div class="bg-white m-5 p-5 rounded">
             <h3>Online-Mart</h3>
-              <p>Description of Online-Mart</p>
-              <p>
-                <button class="b1" onclick="location.href='../Online-Mart/index.html'">
-                    <strong>Click Here</strong>
-                </button>
-              </p>
+            <div class="col-lg-6">
+              <img src="FoodMart1.png" class="img-thumbnail" alt="Foodmart" />
+            </div>
+            <p>Description of Online-Mart</p>
+            <p>
+              <button
+                class="b1"
+                onclick="location.href='../Online-Mart/index.html'"
+              >
+                <strong>Click Here</strong>
+              </button>
+            </p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="bg-white m-5 p-5 rounded">
             <h3>My Store</h3>
-              <p>Description of Project2</p>
-              <p><button class="b1" onclick="location.href='../P2/index.html'">
+            <div class="col-lg-6">
+              <img src="MyStore.png" class="img-thumbnail" />
+            </div>
+            <p>Description of Project2</p>
+            <p>
+              <button class="b1" onclick="location.href='../P2/index.html'">
                 <strong>Click Here</strong>
-            </button>
-        </p>
+              </button>
+            </p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="bg-white m-5 p-5 rounded">
             <h3>Bank ATM</h3>
-              <p>Description of project3</p>
-              <p><button class="b1" onclick="location.href='../P3/index.html'">
+            <div class="col-lg-6">
+              <img src="Bank Account.png" class="img-thumbnail" />
+            </div>
+            <p>Description of project3</p>
+            <p>
+              <button class="b1" onclick="location.href='../P3/index.html'">
                 <strong>Click Here</strong>
               </button>
             </p>
@@ -97,20 +152,66 @@
         </div>
       </div>
 
-      <div class="d-flex bg-success">
+      <div class="row bg-success" id="services">
         <h3></h3>
-        <div class="bg-white m-5 p-5 rounded">Full-stack web apps using MongoDB, Express, React, and Node.js.</div>
-        <div class="bg-white m-5 p-5 rounded">Designing responsive and modern web interfaces with HTML, CSS, and Bootstrap.</div>
-        <div class="bg-white m-5 p-5 rounded">Creating robust backend systems and APIs with Node.js and Express.</div>
-        <div class="bg-white m-5 p-5 rounded">Django</div>
-        <div class="bg-white m-5 p-5 rounded">SpringBoot</div>
+        <div class="bg-white m-5 p-5 rounded">
+          Full-stack web apps using MongoDB, Express, React, and Node.js.
+        </div>
+        <div class="bg-white m-5 p-5 rounded">
+          Designing responsive and modern web interfaces with HTML, CSS, and
+          Bootstrap.
+        </div>
+        <div class="bg-white m-5 p-5 rounded">
+          Creating robust backend systems and APIs with Node.js and Express.
+        </div>
+        <!--<div class="bg-white m-5 p-5 rounded">Django</div>
+        <div class="bg-white m-5 p-5 rounded">SpringBoot</div>-->
       </div>
-      <div></div>
+      <div id="about" class="bg-light p-5">
+        <h3 class="text-center">Technical Skills</h3>
+        <ul class="list-group list-group-horizontal-md justify-content-center">
+          <li class="list-group-item">C Programming</li>
+          <li class="list-group-item">Java</li>
+          <li class="list-group-item">Python</li>
+          <li class="list-group-item">MERN Stack</li>
+        </ul>
+      </div>
 
-      <div></div>
-      <div class="row bg-info">
-        <h3>&copy; 2025. All rights are reserved.</h3>
+      <div id="contact" class="row bg-success text-white p-5">
+        <div class="container bg-white text-dark rounded p-4">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col border p-3">
+              <h3>Enter Your Details</h3>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name:</label>
+                  <input type="text" id="name" class="form-control" placeholder="Enter name" />
+                </div>
+                <div class="mb-3">
+                  <label for="reason" class="form-label">Message:</label>
+                  <input
+                    type="text"
+                    id="reason"
+                    class="form-control"
+                    placeholder="Why do you want to contact me?"
+                  />
+                </div>
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </form>
+            </div>
+            <div class="col border p-3">
+              <h3 class="text-center">My Details</h3>
+              <p><strong>Name:</strong> Neha</p>
+              <p><strong>Contact Number:</strong> +91 4876502845</p>
+              <p><strong>Email:</strong> neha@gmail.com</p>
+              <p><strong>LinkedIn:</strong> Neha Reddy</p>
+            </div>
+          </div>
+        </div>
       </div>
+      <footer class="row bg-info text-center p-3 sticky-bottom">
+        <p>&copy; 2025 Neha. All rights reserved.</p>
+      </footer>
     </div>
 
     <script
