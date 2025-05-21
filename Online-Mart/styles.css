@@ -118,7 +118,9 @@ input{
   background-image: url(images/background-pattern.jpg);
 }*/
 
-
+.Categories{
+  background-image: url(images/bg-light.jpg);
+}
 .left-banner {
   position: relative;
   width: 60%;
@@ -268,6 +270,7 @@ input{
   padding-left: 20px;
   padding-right: 20px;
   margin-top:10px;
+  background-image: url(images/bg-dot-pattern.png);
 }
 .NewArrival .row {
   display: flex;
@@ -285,7 +288,9 @@ input{
   padding: 10px;
   border-radius: 10px;
 }
-
+.trending{
+  background-image: url(images/bg-pattern-2.png);
+}
 .NewArrival figure img {
   width: 80px; /* or your preferred size */
   height: auto;
